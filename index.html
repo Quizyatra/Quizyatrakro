@@ -2623,14 +2623,14 @@ Create your own quiz now:`;
             container.appendChild(emoji);
         }
 
-        // Cleanup after 6 seconds
+        // Cleanup after 4 seconds
         setTimeout(() => {
             container.innerHTML = '';
             if (!clapSound.paused) {
                 clapSound.pause();
                 clapSound.currentTime = 0;
             }
-        }, 6000);
+        }, 4000);
     }
 
     function showSadReaction() {
